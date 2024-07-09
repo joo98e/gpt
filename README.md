@@ -17,3 +17,15 @@ pip freeze -r requirements.txt
 ```
 
 
+```python
+# load env + api key
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+import os
+
+api_key = os.getenv("OPENAI_API_KEY")
+
+```
